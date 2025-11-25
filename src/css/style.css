@@ -1,0 +1,128 @@
+/* @use 'variables'; */
+/* header {
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+} */
+
+/* @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boton($bg, $color) {
+    background-color: $bg;
+    color: $color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($bg, 10%)
+    }
+}
+
+.btn-primario {
+    @include boton(#4CAF50, white)
+}
+
+
+.btn-secundario {
+    @include boton(#2196f3, white)
+}
+
+.contenedor {
+    @include flex-center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+
+.mensaje {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.exito {
+    @extend .mensaje;
+    background-color: #4CAF50;
+}
+
+.error {
+    @extend .mensaje;
+    background-color: #f44336;
+}
+
+
+.card {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        @include flex-center;
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@mixin responsive($size) {
+    @if $size ==small {
+        @media (max-width: 600px) {
+            @contend;
+        }
+    }
+
+    @else if $size ==medium {
+        @media (min-width: 601px) and (max-width: 1024px) {
+            @contend;
+        }
+    }
+
+    @else if $size ==large {
+        @media (min-width: 1025px) {
+            @contend;
+        }
+    }
+}
+
+.contenedor {
+    background-color: #2196f3;
+    padding: 20px;
+    color: white;
+
+    @include responsive(small) {
+        border-color: #4CAF50;
+    }
+
+    @include responsive(medium) {
+        background-color: #282c34;
+    }
+
+    @include responsive(large) {
+        background-color: #f44336;
+    }
+
+} */
+
+/*# sourceMappingURL=style.css.map */
+
+
+.styleLabels {
+    background: #f0f0f0;
+}
