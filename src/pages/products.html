@@ -8,9 +8,20 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <form action="" id="profileForm">
+        <input type="text" id="name" name="fullname" value="Carlos">
+        <button id="saveBtn" type="button" >Guardar</button>
+    </form>
+    <script>
+        document.getElementById('saveBtn').addEventListener('click', () => {
+            const name = document.getElementById('name').value // guarda el nombre 
+            fetch('/api/user', {
+                method: 'POST',
+                headers: {'content-Type': 'application/json'},
+                body: JSON.stringify({name: name}) // name: "..."
+            }).then(r = r.json().then(console.log).catch(console.error))
+        })
+    </script>
 </body>
 
 </html>
