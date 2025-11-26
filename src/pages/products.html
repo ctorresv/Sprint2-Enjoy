@@ -10,7 +10,7 @@
 <body>
     <form action="" id="profileForm">
         <input type="text" id="name" name="fullname" value="Carlos">
-        <button id="saveBtn" type="button" Guardar></button>
+        <button id="saveBtn" type="button" >Guardar</button>
     </form>
     <script>
         document.getElementById('saveBtn').addEventListener('click', () => {
@@ -18,7 +18,7 @@
             fetch('/api/user', {
                 method: 'POST',
                 headers: {'content-Type': 'application/json'},
-                body: JSON.stringify({fullName: name}) // name: "..."
+                body: JSON.stringify({name: name}) // name: "..."
             }).then(r = r.json().then(console.log).catch(console.error))
         })
     </script>
