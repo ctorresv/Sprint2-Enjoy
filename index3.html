@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .col {
+            width: 200px;
+            min-height: 200px;
+            padding: 10px;
+            border: 1px solid #aaa;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .item {
+            padding: 5px;
+            background: #eee;
+            margin: 5px 0;
+            cursor: grab;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="col" id="todo">
+            <h3>Pendientes</h3>
+            <div class="item" draggable="true">Tarea 1</div>
+            <div class="item" draggable="true">Tarea 2</div>
+        </div>
+        <div class="col" id="done">
+            <h3>Hecho</h3>
+        </div>
+    </div>
+
+    <input id="prod" placeholder="Producto">
+    <input type="number" id="precio" placeholder="Precio">
+    <button id="add">Agregar</button>
+    <p id="msg"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <ul id="lista">
+        <li><span>Tarea A</span></li>
+        <li><span>Tarea B</span></li>
+        <li><span>Tarea C</span></li>
+    </ul>
+
+    <script src="./src/scripts/ejerciciosDom.js"></script>
+</body>
+
+</html>
