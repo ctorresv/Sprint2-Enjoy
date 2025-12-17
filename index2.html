@@ -4,20 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <style>
+        .activo {
+            background: yellow;
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <h1>Como usar git</h1>
+    <header id="encabezado">
+        <h1 class="titulo" id="titulo">Como usar git</h1>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit unde quaerat saepe assumenda
+            corporis maiores ullam. Accusantium unde optio tempora quas vero recusandae fugit voluptatum, perferendis
+            odit molestias ipsam sit!</p>
+
+        <div id="caja" class="activo" style="width: 100px; height: 100px;"></div>
     </header>
 
-    <main>
+    <main id="cuerpo">
         Esto es un main
+        <ul id="lista">
+            <li>Elemento 1</li>
+        </ul>
+        <button id="add">Agregar</button>
+        <button id="del">Eliminar ultimo</button>
+
+        <form id="form">
+            <input type="text" id="apellido">
+            <button>enviar</button>
+            <p id="mensaje"></p>
+        </form>
+
+        <input type="text" id="text">
+        <button id="crear">Crear tarjeta</button>
+        <div id="contenedor"></div>
+
+        <input type="text" id="nombre">
+        <button id="boton">Mostrar</button>
+        <br>
+        <button id="bold">B</button>
+        <button id="italic">I</button>
+        <button id="under">U</button>
+
+        <p id="txt" contenteditable="true">Edita este texto</p>
+
+        <div>
+            <button class="tab" data-target="#c1">Tab 1</button>
+            <button class="tab" data-target="#c2">Tab 2</button>
+            <button class="tab" data-target="#c3">Tab 3</button>
+        </div>
+
+        <div id="c1" class="contenido">Contenido 1</div>
+        <div id="c2" class="contenido" style="display: none;">Contenido 2</div>
+        <div id="c3" class="contenido" style="display: none;">Contenido 3</div>
+
+        <button id="nuevo">Nuevo contador</button>
+        <div id="contenedor1"></div>
+
+        <input type="text" id="buscador" placeholder="Buscar...">
+        <ul id="lista1">
+            <li>Perro</li>
+            <li>Gato</li>
+            <li>Caballo</li>
+            <li>Vaca</li>
+            <li>Loro</li>
+        </ul>
+
+
+        <input type="text" id="nombre1" placeholder="Nombre">
+        <input type="text" id="edad" placeholder="edad">
+        <button id="agregar">Agregar</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="body"></tbody>
+        </table>
+
+        <ul id="lista2">
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+
     </main>
     <footer>
         <h2>esto es un footer</h2>
     </footer>
+    <script src="./src/scripts/dom.js"></script>
+    <!-- <script src="./src/scripts/ejerciciosVectores.js"></script> -->
 </body>
 
 </html>
